@@ -1,0 +1,12 @@
+{% extends 'homepage/all.html' %}
+{% block content %}
+
+
+	{% for i in posts %}
+	<h3>{{i.title}}</h3>
+	<p>{{ i.content}}</p>
+	<hr>
+	{% endfor %}
+
+
+{%endblock %}

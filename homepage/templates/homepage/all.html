@@ -1,0 +1,17 @@
+{% load staticfiles %}
+
+<html>
+<head>
+	
+	<link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.css" %}">
+</head>
+<body>
+	<div class="container">
+		{% block content %}
+		{{message}}
+		{% endblock %}
+	</div>
+
+
+</body>
+</html>
